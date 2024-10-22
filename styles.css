@@ -192,3 +192,89 @@ h1 span {
   height: 20px;
   border-radius: 50%;
 }
+@media (max-width: 768px) {
+  /* O menu será transformado em uma coluna */
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  /* Ajustar o tamanho dos itens do menu para caber melhor na tela */
+  li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  /* Tamanho do título e subtítulo no centro */
+  h1 {
+    font-size: 50px;
+  }
+
+  .sub-titulo {
+    font-size: 18px;
+  }
+
+  /* Ajustes nas seções */
+  .Sobre-mim {
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .Text-Sobre-mim {
+    font-size: 30px;
+    margin-left: 25%;
+    margin-top: 20px;
+  }
+
+  .paragrafo {
+    font-size: 14px;
+    margin-left: 0;
+    text-align: justify;
+  }
+
+  .Botão {
+    margin-left: 25%;
+    text-align: center;
+  }
+
+  .Projetos {
+    padding: 0 10px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-projeto {
+    height: auto;
+    width: 100%;
+  }
+
+  .Cards-projetos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Ajustes para telas ainda menores (largura máxima de 480px) */
+@media (max-width: 480px) {
+  .Portforlio {
+    font-size: 30px;
+  }
+
+  .Meu-nome h1 {
+    font-size: 40px;
+  }
+
+  .Meu-nome h3 {
+    font-size: 16px;
+  }
+}
